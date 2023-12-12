@@ -8,7 +8,6 @@ import Loader from "@/components/shared/Loader";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,17 +16,17 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
-import { SignupValidation as SigninValidation } from "@/lib/validation";
-import { createUserAccount } from "@/lib/appwrite/api";
+import { SigninValidation } from "@/lib/validation";
 import { useSignInAccount } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/AuthContext";
+
 
 const SigninForm = () => {
   const { toast } = useToast();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
   const navigate = useNavigate();
 
-  const { mutateAsync: signInAccount, isPending } = useSignInAccount();
+  const { mutateAsync: signInAccount } = useSignInAccount();
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof SigninValidation>>({
@@ -51,6 +50,8 @@ const SigninForm = () => {
     }
 
     const isLoggedIn = await checkAuthUser();
+
+    console.log({isLoggedIn})
 
     if(isLoggedIn){
       form.reset();

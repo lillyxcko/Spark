@@ -1,5 +1,6 @@
 import { getCurrentUser } from '@/lib/appwrite/api';
-import { IContextType, IUser } from '@/types';
+import { IUser } from '@/types';
+
 import { createContext, useContext, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -21,13 +22,21 @@ const INITIAL_STATE = {
     checkAuthUser: async () => false as boolean,
 }
 
+type IContextType = {
+    user: IUser;
+    isLoading: boolean;
+    setUser: React.Dispatch<React.SetStateAction<IUser>>;
+    isAuthenticated: boolean;
+    setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
+    checkAuthUser: () => Promise<boolean>;
+  };
+
 const AuthContext = createContext<IContextType>(INITIAL_STATE);
 
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const [user, setUser] = useState<IUser>(INITIAL_USER);
     const [isLoading, setIsLoading] = useState(false);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     const navigate = useNavigate();
 
     const checkAuthUser = async () => {
@@ -60,11 +69,15 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     };
 
     useEffect(() => {
+        const cookieFallback = localStorage.getItem("cookieFallback");
         if (
-            localStorage.getItem('cookieFallback') === '[]' ||
-            localStorage.getItem('cookieFallback') === null
-        ) navigate('/sign-in')
-
+          cookieFallback === "[]" ||
+          cookieFallback === null ||
+          cookieFallback === undefined
+        ) {
+          navigate("/sign-in");
+        }
+    
         checkAuthUser();
     }, []);
 
@@ -75,13 +88,13 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         isAuthenticated,
         setIsAuthenticated,
         checkAuthUser,
-    }
+    };
 
   return (
     <AuthContext.Provider value={value}>
         {children}
     </AuthContext.Provider>
-  )
+  );
 }
 
 export default AuthProvider; 

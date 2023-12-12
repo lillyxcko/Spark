@@ -1,19 +1,12 @@
+import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from 'react-router-dom';
 
 import { useToast } from "@/components/ui/use-toast";
 
-import { z } from "zod";
+
 import Loader from "@/components/shared/Loader";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
@@ -46,13 +39,13 @@ const SignupForm = () => {
     const newUser = await createUserAccount(values);
     
     if(!newUser){
-      return toast({title: "Sign up failed. Please try again."})
-    }
+      return toast({title: "Sign up failed. Please try again.",})
+    };
 
     const session = await signInAccount({
       email: values.email,
       password: values.password,
-    })
+    });
 
     if(!session){
       return toast({variant: "destructive", title: 'Sign in failed. Please try again.'})
