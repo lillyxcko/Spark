@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../ui/button';
@@ -19,7 +19,7 @@ const Topbar = () => {
         <div className="flex-between py-4 px-5">
             <Link to="/" className="flex gap-3 items-center">
                 <img 
-                    src="/assets/images/logo.svg"
+                    src="/assets/images/Spark.svg"
                     alt="logo"
                     width={130}
                     height={325}
