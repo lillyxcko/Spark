@@ -17,5 +17,6 @@
 <img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/d306a7ea-bd9b-4563-9090-c752dc8c97f6">
 
 
-
+# Edit Posts
+<img width="500" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/82e24a80-3012-4408-a651-51cf2d74d9cc">
 
