@@ -3,13 +3,13 @@
 <img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/64deac77-cf35-4838-8a81-96d973b4e60a">
 
 # Home
-<img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/90c7fa1b-4de2-4a87-b197-801774f6ce8c">
-<img width="600" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/0c882d40-0252-448e-82bc-dd5dc0d9d460">
+<img width="200" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/90c7fa1b-4de2-4a87-b197-801774f6ce8c">
+<img width="500" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/0c882d40-0252-448e-82bc-dd5dc0d9d460">
 
 
 # Explore & Search
-<img width="600" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/3e7612a5-65b5-44e3-9158-83d0d502253d">
-<img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/fdd812d1-a657-43f9-84a3-87aaca8b650d">
+<img width="500" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/3e7612a5-65b5-44e3-9158-83d0d502253d">
+<img width="200" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/fdd812d1-a657-43f9-84a3-87aaca8b650d">
 
 
 # Create Posts
