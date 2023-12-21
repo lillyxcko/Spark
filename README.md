@@ -20,3 +20,6 @@
 # Edit Posts
 <img width="500" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/82e24a80-3012-4408-a651-51cf2d74d9cc">
 
+# Post Details
+<img width="500" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/e6ae0c38-de77-4dfb-8c6c-89d8b1034254">
+
