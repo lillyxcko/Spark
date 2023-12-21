@@ -52,6 +52,8 @@
 
     "react-hook-form": "^7.49.0",
 
+    "react-intersection-observer": "^9.5.3",
+
     "react-router-dom": "^6.20.1",
 
     "tailwind-merge": "^2.1.0",
