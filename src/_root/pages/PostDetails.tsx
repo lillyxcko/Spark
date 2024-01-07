@@ -3,16 +3,12 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 
 import {
   useGetPostById,
-  useGetPosts,
-  useDeletePost,
 } from "@/lib/react-query/queriesAndMutations";
 import { formatDateString } from "@/lib/utils";
 import { useUserContext } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Loader } from "lucide-react";
 import PostStats from "@/components/shared/PostStats";
-import GridPostList from "@/components/shared/GridPostList";
-import { deletePost } from "@/lib/appwrite/api";
 
 const PostDetails = () => {
   const navigate = useNavigate();
