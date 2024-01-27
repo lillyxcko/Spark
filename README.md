@@ -1,3 +1,8 @@
+If you wish to preview without creating an account you may use these guest credentials to login:
+Email: guest123@gmail.com
+Password: HelloWorld!
+
+
 # Authentication
 <img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/60b8202f-41d6-40db-921d-d0694df2fe2f">
 <img width="300" alt="image" src="https://github.com/lillyxcko/Spark/assets/79551113/64deac77-cf35-4838-8a81-96d973b4e60a">
