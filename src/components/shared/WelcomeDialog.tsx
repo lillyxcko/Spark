@@ -47,7 +47,7 @@ const WelcomeDialog = () => {
             so for now you'll see blank image spots. 😔
           </p>
           <p className="base-regular">
-            Everything else still works — feel free to explore, browse posts, and look around!
+            Everything else still works, so feel free to explore, browse posts, and look around!
           </p>
         </div>
 
